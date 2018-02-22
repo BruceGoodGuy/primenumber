@@ -7,14 +7,15 @@ body{
 }
 .contain{
 	width: 500px;
-	height: 500px;
-	margin: 200px auto;
+	height: 225px;
+	margin: 180px auto;
 	background: white;
 	-webkit-box-shadow: 0px 0px 39px 2px rgba(117,117,117,1);
 	-moz-box-shadow: 0px 0px 39px 2px rgba(117,117,117,1);
 	box-shadow: 0px 0px 39px 2px rgba(117,117,117,1);
 	border-radius: 5px;
 	box-sizing: border-box;
+	position: relative;
 }
 .intro{
 	text-align: center;
@@ -24,4 +25,32 @@ body{
 	font-family: 'Orienta', sans-serif;
 	font-weight: bolder;
 	border-bottom: 1px solid #e5e5e5;
+	color: tomato;
+}
+.form{
+	padding: 20px 20px 0px 20px;
+	box-sizing: border-box;
+}
+input[type="text"]{
+	width: 100%;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+	padding: 0px 10px;
+	color: gray;
+}
+input[type="text"]:focus{
+	border-color: tomato;
+}
+button{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	border: none;
+	background: tomato;
+	color: white;
+	font-size: 25px;
 }
