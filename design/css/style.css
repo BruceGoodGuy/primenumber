@@ -54,3 +54,21 @@ button{
 	color: white;
 	font-size: 25px;
 }
+.getWrong{
+	width: 100%;
+	height: 100%;
+	background: rgb(255, 99, 71,0.5);
+	position: absolute;
+	z-index: 2;
+	border-radius: 5px;
+	top: 0px;
+	text-align: center;
+	line-height: 225px;
+	color: white;
+	font-size: 30px;
+	font-weight: bolder;
+	font-family: 'Orienta', sans-serif;
+	transition: all 0.5s;
+	display: none;
+
+}

@@ -16,6 +16,9 @@
 		<input type="text" name="" value="" placeholder="Number">
 		<button>OK</button>
 	</div>
+	<div class="getWrong">
+		Wrong Input
+	</div>
 </div>
 </body>
 </html>
