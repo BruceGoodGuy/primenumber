@@ -14,6 +14,8 @@
 	</div>
 	<div class="form">
 		<input type="text" name="" value="" placeholder="Number">
+		<div class="result">
+		</div>
 		<button>OK</button>
 	</div>
 	<div class="getWrong">

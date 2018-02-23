@@ -3,6 +3,7 @@ $(document).ready(function(){
 		var number = $("input").val()
 		if($.isNumeric(number))
 			{
+				$(".result").fadeIn();
 				$.ajax({
 					url: "process/process.php",
 					dataType: "html",
@@ -11,16 +12,20 @@ $(document).ready(function(){
 						number : number
 					}
 					,success: function(data){
-					console.log(data);
+						$(".result").html(data);
 					}
 					})
 			}
 		else
 			{
-				$(".getWrong").fadeIn()
+				$(".getWrong").fadeIn("slow")
 			}
 	})
 	$(".getWrong").click(function(){
 		$(this).fadeOut()
+	})
+	$(".box").click(function(){
+		var num = $(this).html();
+		console.log(num)	
 	})
 })
