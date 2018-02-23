@@ -24,8 +24,4 @@ $(document).ready(function(){
 	$(".getWrong").click(function(){
 		$(this).fadeOut()
 	})
-	$(".box").click(function(){
-		var num = $(this).html();
-		console.log(num)	
-	})
 })

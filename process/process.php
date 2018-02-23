@@ -23,5 +23,25 @@
 	{
 		echo "<div class='box'>".$value."</div>";
 	}
+
 ?>
 	<div class="show"><?=$result?></div>
+<script>
+	$(document).ready(function(){
+		$(".box").click(function(){
+		var num = $(this).html();
+		$("input").val(num)	
+			$.ajax({
+			url: "process/process.php",
+			dataType: "html",
+			type: "POST",
+			data: {
+				number : num
+			}
+			,success: function(data){
+				$(".result").html(data);
+			}
+			})
+		})
+	})
+</script>
